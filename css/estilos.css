@@ -16,7 +16,6 @@ nav {
 
 
 
-
 html, body {
     background-color: var(--color-white);
     margin: 0;
@@ -93,5 +92,9 @@ text-align: center;
 
 .parrafo_motivador{
     margin: 10px;
-    text-align: justify;
+    text-align: start;
+}
+
+.puntero_dedo{
+    cursor: pointer;
 }
