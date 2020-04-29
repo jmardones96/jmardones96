@@ -45,6 +45,15 @@ text-align: center;
     color: var(--color-white) ;
 }
 
+@media (max-width: 500px) {
+
+    .texto_nav {
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+
 .texto_nav:hover{
     color: #18a1c4;
     transition-duration: 1s;
