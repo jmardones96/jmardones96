@@ -40,7 +40,7 @@ footer {
 
 .estilo_footer {
 
-    width: 100%;
+    width: 109%;
     background-color: var(--color-dark);
     color: white;
   font-size: 20px;
@@ -59,6 +59,12 @@ padding: 10px;
     font-family: 'Libre Baskerville', serif !important;
     color: var(--color-white);
 }
+
+.row_chilense{
+    display: flex;
+}
+
+
 
 
 .texto_nav:hover {
@@ -105,14 +111,10 @@ padding: 10px;
 
 .espacion_foda {
     padding-top: 5px;
-    ;
+    
 }
 
 .image_foda {
-    height: 100%;
-    width: 60%;
-    min-height: 250px;
-    min-width: 245px;
     border-radius: 100%;
 }
 .espacion_tarjeta_foda{
@@ -120,6 +122,28 @@ padding: 10px;
 }
 
 
+.modal_contacto{
+padding: 20px;
+}
+
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+div.row {
+
+    border-bottom: 0px;
+}
+
+
+
+.tarjeta_contacto{
+    background-color: #f3f3f3;
+}
 
 
 

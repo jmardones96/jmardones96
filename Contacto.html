@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/efect.css">
+    <link rel="stylesheet" href="css/fancy.css">
 </head>
 
 <body>
@@ -30,21 +31,22 @@
 
         <div class="collapse navbar-collapse " id="navbarText">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="texto_nav" href="Quienes_Somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="texto_nav " href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="texto_nav pagina_posicion" href="#">Contacto</a>
+                </li>
 
-                <li class="nav-item">
-                    <a class="texto_nav" href="Servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="texto_nav" href="Contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="texto_nav pagina_posicion" href="#">Quienes Somos</a>
-                </li>
             </ul>
         </div>
     </nav>
     <!--Nav-->
-
+    <div>
+    </div>
     <br>
     <br>
     <!--Titulo-->
@@ -57,74 +59,54 @@
     </div>
     <!--Titulo-->
 
-    <!--//**//-->
-    <div class="container text-center top fadeInUp ">
-        <div class="row espacion_tarjeta_foda" >
-            <div class="col-xs-12 col-sm-4 order-sm-first">
-                <img src="img/2.jpg" class="image_foda img-fluid" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-8 order-sm-last">
-                <!--Texto de Foda-->
-                <h1>Titulo</h1>
-                <p>
-                    Proporcionamos soluciones creativas y eficientes estando presente desde la etapa de
-                    diseño, construcción y puesta en marcha, hasta su posterior servicio de mantención,
-                    modernización o reparación para las matrices energéticas del sector industrial de
-                    nuestro país.
-                </p>
+    <!--Formulario-->
+    <div class="container espacion_tarjeta_foda fadeInUp ">
+        <div class="row">
+            <div class="col-1 col-sm-2 col-md-3"></div>
+
+            <div class="col-10 col-sm-8 col-md-6 border modal_contacto tarjeta_contacto">
+                <form>
+                    <div class="form-group">
+                        <label for="first_name">Nombre</label>
+                        <input type="text"  class="form-control" id="first_name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo </label>
+                        <input type="email" class="form-control" id="email" required aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted"> Nunca compartiremos su correo electrónico con nadie.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="night_phone_a">Cel:</label>
+                        <input type="text" class="form-control" id="night_phone_a" required aria-describedby="emailHelp">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+                      </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox">
+                        <label class="form-check-label" for="checkbox">Deseo Recibir Informacion de la empresa a mi correo.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Enviar</button>
+
+                </form>
             </div>
 
-
-            <div class="col-xs-12 col-sm-4 order-sm-last">
-                <img src="img/2.jpg" class="image_foda img-fluid" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-8 order-sm-first">
-                 <!--Texto de Foda-->
-                 <h1>Titulo</h1>
-                 <p>
-                     Proporcionamos soluciones creativas y eficientes estando presente desde la etapa de
-                     diseño, construcción y puesta en marcha, hasta su posterior servicio de mantención,
-                     modernización o reparación para las matrices energéticas del sector industrial de
-                     nuestro país.
-                 </p>
-            </div>
-        </div>
-        <div class="row espacion_tarjeta_foda" >
-            <div class="col-xs-12 col-sm-4 order-sm-first">
-                <img src="img/2.jpg" class="image_foda img-fluid" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-8 order-sm-last">
-                <!--Texto de Foda-->
-                <h1>Titulo</h1>
-                <p>
-                    Proporcionamos soluciones creativas y eficientes estando presente desde la etapa de
-                    diseño, construcción y puesta en marcha, hasta su posterior servicio de mantención,
-                    modernización o reparación para las matrices energéticas del sector industrial de
-                    nuestro país.
-                </p>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-4 order-sm-last">
-                <img src="img/2.jpg" class="image_foda img-fluid" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-8 order-sm-first">
-                 <!--Texto de Foda-->
-                 <h1>Titulo</h1>
-                 <p>
-                     Proporcionamos soluciones creativas y eficientes estando presente desde la etapa de
-                     diseño, construcción y puesta en marcha, hasta su posterior servicio de mantención,
-                     modernización o reparación para las matrices energéticas del sector industrial de
-                     nuestro país.
-                 </p>
-            </div>
+            <div class="col-1 col-sm-2 col-md-3"></div>
         </div>
     </div>
+    <!--Formulario-->
 
-    <br>
+
+    <br><br>
 
     <!--Footer-->
-    <div class="container">
+    <div class="container fadeIn">
         <div class="row estilo_footer">
             <div class="col-12 col-md-4 text-center estilo_footer_seccion">
                 © 2020 Copyright
@@ -152,6 +134,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+    <!--FancyBox-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 
