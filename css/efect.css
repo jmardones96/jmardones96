@@ -40,3 +40,9 @@
    margin-right: 5%;
    margin-left:5%;
 }
+
+.puntero_dedo{
+    cursor: pointer;
+}
+
+
