@@ -1,228 +1,789 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-   
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#083756" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Added more descriptive title -->
+    <title>AFLOW - Desarrollo Web Profesional y Soluciones Digitales</title>
+    <link rel="icon" href="style/img/aflow/LogoSinFondoTexto.ico" type="image/x-icon">
+    <!-- Added meta description for SEO -->
+    <meta name="description" content="AFLOW ofrece servicios de desarrollo web profesional, diseño de software y soluciones digitales para impulsar tu negocio en línea.">
+    <!-- Added keywords meta tag for SEO -->
+    <meta name="keywords" content="desarrollo web, diseño de software, marketing digital, SEO, transformación digital">
+    <!-- Added canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://www.aflow.com/">
+    <!-- Added Open Graph tags for better social media sharing -->
+    <meta property="og:title" content="AFLOW - Desarrollo Web Profesional y Soluciones Digitales">
+    <meta property="og:description" content="Servicios de desarrollo web profesional, diseño de software y soluciones digitales para impulsar tu negocio en línea.">
+    <meta property="og:image" content="https://www.aflow.com/og-image.jpg">
+    <meta property="og:url" content="https://www.aflow.com/">
+    <meta property="og:type" content="website">
+    <!-- Added Twitter Card tags for better Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AFLOW - Desarrollo Web Profesional y Soluciones Digitales">
+    <meta name="twitter:description" content="Servicios de desarrollo web profesional, diseño de software y soluciones digitales para impulsar tu negocio en línea.">
+    <meta name="twitter:image" content="https://www.aflow.com/twitter-image.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+          :root {
+            --primary: #FF4B6E;
+            --secondary: #4B9FFF;
+            --accent: #FFB344;
+            --dark: #2A2A2A;
+            --light: #F8F9FA;
+            --text-dark: #212529;
+            --text-light: #FFFFFF;
+            --bg-gray: #f0f0f0;
+            --bg-cream: #fff8e1;
+        }
 
-    <meta name="description" content="Pagina de Multiples servicios en el rubro de la contruccion" />
-    <meta name="keywords" content="Electricidad,electricidad,work,service,ariel,instalacion,electrica"/>
-    <meta name="robots" content="index,follow" />
-    <meta name="title" content="Work Service" />
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light);
+        }
+
+        .navbar {
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background-color: var(--light) !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .bg-gradient-animated {
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            background-size: 200% 200%;
+            animation: gradientAnimation 15s ease infinite;
+            color: var(--text-light);
+        }
+        .bg-gradient-animated-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            background-size: 200% 200%;
+            animation: gradientAnimation 40s ease infinite;
+            color: var(--text-light);
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+            color: var(--text-light);
+        }
+
+        .heroFooter {
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+            color: var(--text-light);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: #e0435e;
+            border-color: #e0435e;
+        }
+
+        .section-templates {
+            background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+            padding: 4rem 0;
+        }
+        .card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .heart-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #dc3545;
+            font-size: 1.5rem;
+        }
+        .btn-option {
+            transition: all 0.2s ease;
+        }
+        .btn-option:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .template-preview {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: var(--text-light);
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-5 {
+            margin-bottom: 3rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem;
+        }
+
+        .py-5 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .py-4 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+
+        /* New styles for the heart icon */
+        .heart-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .heart-icon {
+            transform: scale(1.2);
+        }
+
+        /* New styles for the card button */
+        .card .btn-template {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: var(--text-light);
+        }
+
+        .card .btn-template:hover {
+            background-color: #e0a33b;
+            border-color: #e0a33b;
+        }
+
+        /* Background colors for sections */
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        .bg-cream {
+            background-color: var(--bg-cream);
+        }
+
+        .hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #ff4d6d;
+  border-color: #ff4d6d;
+}
+
+.btn-danger:hover {
+  background-color: #ff3c5c;
+  border-color: #ff3c5c;
+}
+
+
+    </style>
+ <style>
+    .timeline {
+        position: relative;
+        padding: 50px 0;
+    }
+    .timeline::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #dee2e6;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .timeline-item {
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline-item::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .timeline-content {
+        width: 45%;
+        padding: 20px;
+        position: relative;
+        border-radius: 15px;
+    }
+    .timeline-content::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        border-width: 10px;
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        left: 55%;
+    }
+    .left::after {
+        border-color: transparent transparent transparent #fff;
+        right: -20px;
+    }
+    .right::after {
+        border-color: transparent #fff transparent transparent;
+        left: -20px;
+    }
+    .timeline-icon {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        overflow: hidden;
+        margin-left: -25px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    .leaf {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 50% 0;
+        transform: rotate(45deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .leaf-content {
+        transform: rotate(-45deg);
+        text-align: center;
+    }
+    .bg-red { background-color: #dc3545; }
+    .bg-blue { background-color: #0d6efd; }
+    .bg-yellow { background-color: #ffc107; }
+    .bg-light-blue { background-color: #0dcaf0; }
+    .bg-green { background-color: #198754; }
+    @media (max-width: 767px) {
+        .timeline::before {
+            left: 20px;
+        }
+        .timeline-content {
+            width: calc(100% - 70px);
+            margin-left: 70px;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 70px;
+        }
+        .left::after, .right::after {
+            left: -20px;
+            border-color: transparent #fff transparent transparent;
+        }
+        .timeline-icon {
+            left: 15px;
+        }
+        .right {
+            left: 0 !important;
+        }
+    }
+</style>
     
-    <meta property="og:locale" content="es_LA" />
-    
-    <!--<meta property="og:image:secure_url" itemprop="image"  content="https://jmardones96.github.io/img/mini_logo.png" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:updated_time" content="999999999" />-->
-    
-    <meta property="og:url" content="https://jmardones96.github.io/">
-    <meta property="og:site_name" content="WorkService">
-    <meta property="og:title" content="Work Service">
-    <meta property="og:description" content="Pagina de Multiples servicios en el rubro de la contruccion.">
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1eTJo3i7eM4kdn6j4w_DE9-j2NqaH0cpxxk5rVVIy4TUkP_jg&usqp=CAU">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1eTJo3i7eM4kdn6j4w_DE9-j2NqaH0cpxxk5rVVIy4TUkP_jg&usqp=CAU">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="620">
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1eTJo3i7eM4kdn6j4w_DE9-j2NqaH0cpxxk5rVVIy4TUkP_jg&usqp=CAU">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="620">
-
-
-
-
-
-    <meta property='fb:admins' content='FB-AppID'/>
-    
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Pagina de Multiples servicios en el rubro de la contruccion"/>
-    <meta name="twitter:title" content="Work Service"/>
-    <meta name="twitter:site" content="@joaquin19966"/>
-    <meta name="twitter:creator" content="@joaquin19966"/>
-    <meta name="twitter:image:src" content="https://jmardones96.github.io/img/mini_logo.png">
-
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Work Service</title>
-    <link rel="shortcut icon" href="img/mini_logo.ico">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/efect.css">
 </head>
-
 <body>
-
-    <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top " style="background-color: black !important;">
-        <img src="img/mini_logo.png" alt="">
-        <a class="navbar-brand texto_nav" href="index.html">Work Service </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="texto_nav" href="Quienes_Somos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="texto_nav" href="Servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="texto_nav" href="Contacto.html">Contacto</a>
-                </li>
-            
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoPage-taPp0oYK41vwS0yUsqzGeD8DLzwaWS.png" alt="AFLOW Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linetime">Metodología</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#templates">Templates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#preguntasFrecuentes">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="#contacto">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!--Nav-->
 
-    <br>
-    <br>
-    <!--Titulo-->
-    <div class="container-fluid  fadeIn ">
-        <div class="text_titulo Titulo_principal_luz_interno">
-            <span class="Titulo_principal_luz ">Work Service</span>
-            <h1 class="">Tu Empresa de confianza</h4>
-                <hr>
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Automatización Inteligente de Procesos                    </h1>
+                    <p class="lead ">Transformamos tu negocio con soluciones que fluyen automáticamente.</p>
+                    <p class="mb-4">"Simplifica. Automatiza. Crece"</p>
+                    <a href="#contacto" class="btn btn-light btn-lg">Impulsa tu Eficiencia</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="style/img/aflow/LogoLetrasBlanca.png" alt="Profesional usando laptop" class="img-fluid rounded " style="max-height: 900px; max-width: 100%;" type="image/svg+xml">
+                </div>
+            </div>
         </div>
-    </div>
-    <!--Titulo-->
+    </section>
 
-    <div class="container-fluid fadeInUp">
-        <div class="row">
-            <!--Seccion de imagenes-->
-            <div class="col-xs-hidden col-lg-1"></div>
+    <section id="servicios" class="section-padding bg-gray" loading="lazy">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Servicios
+                <img src="style/img/aflow/LogoSinFondoTexto.png" alt="AFLOW Logo" height="30">
+            </h2>
+            <div class="row g-4 ">
+                <div class="col-md-4">
+                    <div class="card service-card bg-gradient-animated">
+                        <div class="card-body text-center">
+                            <i class="bi bi-code-slash service-icon text-primary"></i>
+                            <h3 class="card-title">Desarrollo de Software</h3>
+                            <p class="card-text">Creamos soluciones digitales que transforman tu negocio:</p>
+                            <ul class="text-start">
+                                <li>Aplicaciones móviles nativas e híbridas</li>
+                                <li>Desarrollo web responsive</li>
+                                <li>Integración de sistemas (API REST, SOAP)</li>
+                                <li>Migración a la nube</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card bg-gradient-animated-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-graph-up service-icon text-warning"></i>
+                            <h3 class="card-title">Análisis de Datos</h3>
+                            <p class="card-text">Convertimos datos en decisiones:</p>
+                            <ul class="text-start">
+                                <li>Implementación de dashboards en tiempo real</li>
+                                <li>Reportes estratégicos</li>
+                                <li>Visualización de KPIs</li>
+                                <li>Análisis predictivo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card bg-gradient-animated">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bullseye service-icon text-danger"></i>
+                            <h3 class="card-title">Marketing Digital</h3>
+                            <p class="card-text">Potenciamos tu presencia digital:</p>
+                            <ul class="text-start">
+                                <li>Estrategias personalizadas</li>
+                                <li>Captación de clientes</li>
+                                <li>Optimización de canales</li>
+                                <li>Análisis de mercado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-1">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center bg-gradient-animated-card">
+                            <i class="bi bi-laptop service-icon text-warning"></i>
+                            <h3 class="card-title">Diseño Web</h3>
+                            <p class="card-text text-start">Creamos diseños atractivos y funcionales que reflejan la identidad de tu marca.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card bg-gradient-animated">
+                        <div class="card-body text-center">
+                            <i class="bi bi-arrow-repeat service-icon text-primary"></i>
+                            <h3 class="card-title">Transformación Digital</h3>
+                            <p class="card-text">Modernizamos tu empresa:</p>
+                            <ul class="text-start">
+                                <li>Digitalización de procesos operativos</li>
+                                <li>Implementación de soluciones en la nube</li>
+                                <li>Optimización de flujos de trabajo</li>
+                                <li>Integración de sistemas legacy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center bg-gradient-animated-card">
+                            <i class="bi bi-gear service-icon text-danger"></i>
+                            <h3 class="card-title">Optimización SEO</h3>
+                            <p class="card-text text-start">Mejoramos la visibilidad de tu sitio en los motores de búsqueda para atraer más tráfico.</p>
+                        </div>
+                    </div>
+                </div>               
+            </div>
 
-            <div class=" col-12 col-lg-6  text-center">
-                <div class="estilo_carosel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner text-center">
-                            <div class="carousel-item active text-center">
-                                <img class="d-block w-100 img-responsive" src="img/1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-responsive" src="img/2.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-responsive" src="img/3.jpg" alt="Third slide">
+        </div>
+    </section>
+
+
+    <section id="linetime" class="hero">
+        <div class="container mt-5">
+            <h1 class="text-center mb-5">Metodología de trabajo <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoPage-taPp0oYK41vwS0yUsqzGeD8DLzwaWS.png" alt="AFLOW Logo" height="30"></h1>
+            <h2 class="text-center mb-4">Tu Visión, Nuestro Compromiso: Un Proceso Probado hacia el Éxito Digital</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <div class="leaf bg-red">
+                            <div class="leaf-content text-white">
+                                <i class="bi bi-people-fill"></i>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
-
-
-                </div>
-                <!--Seccion de imagenes-->
-            </div>
-            <!--Texto de Empresa-->
-            <div class=" col-12  col-lg-5 text-center">
-                <br> <br>
-                <h3>Titulo</h3>
-                <div class="row text_motivado">
-                    <div class="col-xs-12 col-sm-12 text-center">
-                        <p class="parrafo_motivador">Ofrecemos servicios de emergencias e instalaciones eléctricas de
-                            acuerdo a la normativa vigente, las
-                            24 horas del día. Contamos con un equipo de técnicos Electricistas especializados SEC, que
-                            con
-                            su
-                            experiencia y profesionalismo entregaran un servicio de seguridad, y calidad para todos
-                            nuestros
-                            clientes.
-                            Ofrecemos servicios de emergencias e instalaciones eléctricas de acuerdo a la normativa
-                            vigente,
-                            las
-                            24 horas del día. Contamos con un equipo de técnicos Electricistas especializados SEC, que
-                            con
-                            su
-                            experiencia y profesionalismo entregaran un servicio de seguridad, y calidad para todos
-                            nuestros
-                            clientes.</p>
+                    <div class="timeline-content left bg-gradient-animated-card shadow">
+                        <h3 class="mb-3">🎯 Descubrimiento y Visión</h3>
+                        <p>Iniciamos cada proyecto con una inmersión profunda en tu negocio. Nuestros expertos colaboran estrechamente contigo para entender tus objetivos, desafíos y sueños empresariales. Convertimos tus ideas en un plan de acción concreto y personalizado.</p>
                     </div>
-                  <!--  <div class="col-xs-12 col-sm-6">
-
-                        <p class="parrafo_motivador"> Contamos con servicios a domicilio, condominios y todo tipo de
-                            empresas, ofreciendo soluciones
-                            eléctricas integrales y de calidad para todos nuestros clientes.
-                            Contamos con servicios a todas las comunas de Santiago.
-                            Llámenos: +00000000
-                            Contamos con servicios a domicilio, condominios y todo tipo de empresas, ofreciendo
-                            soluciones
-                            eléctricas integrales y de calidad para todos nuestros clientes.
-                            Contamos con servicios a todas las comunas de Santiago.
-                            Llámenos: +00000000</p>
-                    </div>-->
                 </div>
-            </div>
-
-        </div>
-
-
-        <!--Texto de Empresa-->
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-      <!--Footer-->
-    <div class="container">
-        <div class="row estilo_footer">
-            <div class="col-12 col-md-4 text-center estilo_footer_seccion">
-                © 2020 Copyright
-            </div>
-            <div class="col-12 col-md-4 text-center estilo_footer_seccion">
-                <a href="mailto:work.service.hm@gmail.com">work.service.hm@gmail.com</a>
-            </div>
-            <div class="col-12 col-md-4 text-center estilo_footer_seccion">
-                <a href="https://api.whatsapp.com/send?phone=+56950372212">Tel:+56950372212</a>
+    
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <div class="leaf bg-blue">
+                            <div class="leaf-content text-white">
+                                <i class="bi bi-lightbulb-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content right bg-gradient-animated-card shadow">
+                        <h3 class="mb-3">💡 Arquitectura de Soluciones</h3>
+                        <p>Diseñamos tu futuro digital con precisión y visión de largo plazo. Cada solución es única, construida para crecer contigo y adaptarse a tus necesidades futuras. Creamos los planos de tu éxito con un enfoque en la innovación y la excelencia.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <div class="leaf bg-yellow">
+                            <div class="leaf-content text-dark">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content left bg-gradient-animated-card shadow">
+                        <h3 class="mb-3">⚡ Desarrollo Ágil y Dinámico</h3>
+                        <p>Transformamos ideas en realidad utilizando lo mejor de las metodologías modernas. Nuestro enfoque híbrido único combina la velocidad del desarrollo ágil con la solidez de la planificación estratégica, garantizando resultados excepcionales en cada etapa.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <div class="leaf bg-light-blue">
+                            <div class="leaf-content text-white">
+                                <i class="bi bi-rocket-takeoff-fill"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoPage-taPp0oYK41vwS0yUsqzGeD8DLzwaWS.png" alt="AFLOW Logo" height="15"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content right bg-gradient-animated-card shadow">
+                        <h3 class="mb-3">🚀 Lanzamiento Controlado</h3>
+                        <p>Tu éxito es nuestra prioridad. Implementamos tu solución en un ambiente controlado donde puedes experimentar, evaluar y refinar cada aspecto. Tu feedback directo shape el producto final, asegurando que cada detalle cumpla y supere tus expectativas.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <div class="leaf bg-green">
+                            <div class="leaf-content text-white">
+                                <i class="bi bi-shield-fill-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-content left bg-gradient-animated-card shadow">
+                        <h3 class="mb-3">🛡️ Respaldo Continuo</h3>
+                        <p>No te dejamos solo. Nuestro compromiso va más allá del lanzamiento con un servicio premium de soporte y mantenimiento. Cuenta con un equipo dedicado de expertos listos para responder a tus necesidades y mantener tu software en óptimas condiciones.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--Footer-->
-    </div>
-  <!--Footer-->
+    </section>
+    
+    <section id="templates" class="section-padding bg-light py-5" loading="lazy">
+        <div class="container">
+            <h2 class="text-center mb-5  ">Nuestros Templates
+                <img src="style/img/aflow/LogoSinFondoTexto.png" alt="AFLOW Logo" height="30">
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 position-relative shadow-sm hover-scale">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <i class="bi bi-heart-fill text-danger fs-4"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Enamorados</h5>
+                            <p class="card-text flex-grow-1">Múltiples diseños románticos para parejas.</p>
+                            <img src="style/img/pololos.png" class="card-img-top" height="80" width="40" alt="Template Enamorados">
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="Template/enamorados/opcion1/index.html" class="btn btn-outline-danger btn-option" target="_blank">Ver Template 1</a>
+                                <a href="https://www.google.com" class="btn btn-outline-danger btn-option" target="_blank">Ver Template  2</a>
+                                <a href="https://www.google.com" class="btn btn-outline-danger btn-option" target="_blank">Ver Template  3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 position-relative shadow-sm hover-scale">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <i class="bi bi-heart-fill text-danger fs-4"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-3">Novios</h5>
+                            <p class="card-text flex-grow-1">Templates personalizables para futuros esposos.</p>
+                            <img src="style/img/novios.png" class="card-img-top" height="80" width="40" alt="Template Novios">
+                            <div class="d-flex justify-content-between mt-3">
+                                <a href="https://www.google.com" class="btn btn-outline-danger btn-option" target="_blank">Ver Template  1</a>
+                                <a href="https://www.google.com" class="btn btn-outline-danger btn-option" target="_blank">Ver Template  2</a>
+                                <a href="https://www.google.com" class="btn btn-outline-danger btn-option" target="_blank">Ver Template  3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preguntasFrecuentes" class="section-padding bg-gradient-animated" loading="lazy">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Preguntas Frecuentes <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoPage-taPp0oYK41vwS0yUsqzGeD8DLzwaWS.png" alt="AFLOW Logo" height="30"></h2>
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ⏱️ ¿Cuánto tiempo se necesita para crear un software personalizado?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Cada proyecto es único y el tiempo varía según lo que necesites. Normalmente, un proyecto completo toma entre 2 y 6 meses, dependiendo de qué tan complejo sea lo que quieras construir.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            📋 ¿Qué necesito tener listo para pedir un presupuesto?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Lo ideal es tener una lista clara de lo que quieres que haga tu software. No te preocupes si no tienes todo definido - podemos ayudarte a organizar tus ideas y convertirlas en un plan concreto (este servicio tiene un costo adicional).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            🔄 ¿Qué necesito saber para conectar diferentes sistemas?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Necesitamos tres cosas básicas:
+                            <ul>
+                                <li>Saber qué programas quieres conectar</li>
+                                <li>Cómo se pueden conectar (por ejemplo, si tienen API)</li>
+                                <li>Los manuales técnicos de cada sistema</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            🛠️ ¿Cuáles son los pasos para crear mi software?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            El proceso se divide en tres etapas principales:
+                            <ol>
+                                <li>Diseño: Planeamos cómo será tu software</li>
+                                <li>Desarrollo: Lo construimos</li>
+                                <li>Pruebas: Lo probamos en un entorno real</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            🔧 ¿Dan servicio técnico después de terminar el software?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            ¡Sí! Tenemos varios planes de mantenimiento y soporte para elegir, cada uno con diferentes niveles de servicio y precios para adaptarse a tus necesidades.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            🔄 ¿Pueden modificar un software que hizo otra empresa?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Es posible, pero primero necesitamos revisar:
+                            <ul>
+                                <li>Si las tecnologías usadas son compatibles con las nuestras</li>
+                                <li>Si el código está bien estructurado</li>
+                                <li>Hacer una evaluación técnica del software actual</li>
+                            </ul>
+                            Nota: Este proceso requiere un servicio especial de "toma de control" del software existente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding bg-gray">
+        <div class="container">
+            <h2 class="text-center mb-5">Contáctanos <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoPage-taPp0oYK41vwS0yUsqzGeD8DLzwaWS.png" alt="AFLOW Logo" height="30"></h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <footer class="py-3 heroFooter">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <p>&copy; 2023 AFLOW. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:aflowcl@gmail.com" class="text-white me-2"><i class="bi bi-envelope-fill"></i></a>            
+                            <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
 
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AFLOW",
+      "url": "https://www.aflow.com/",
+      "description": "AFLOW ofrece servicios de desarrollo web profesional, diseño de software y soluciones digitales para impulsar tu negocio en línea.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.aflow.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </body>
-
 </html>
