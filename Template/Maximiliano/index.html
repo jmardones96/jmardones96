@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Etiqueta de Codificación de Caracteres -->
+    <meta charset="UTF-8">
+  <!-- Etiqueta de Vista: Optimiza la visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Etiqueta de Título: Aparece en la pestaña del navegador y en los resultados de búsqueda -->
+   <title>Tu Contador Amigo | P&G</title>
+  <!-- Meta Descripción: Resumen de la página para los motores de búsqueda (máx. 160 caracteres) -->
+  <meta name="description" content="Servicios de contabilidad profesional, auditoría y asesoría fiscal para pymes y grandes empresas. Nuestro equipo de contadores te ayuda a optimizar tus finanzas y garantizar el cumplimiento legal.">
+  <!-- Meta Palabras Clave: Lista de palabras clave relevantes para la página (opcional) -->
+  <meta name="keywords" content="contabilidad profesional, asesoría contable, auditoría financiera, planificación tributaria, gestión contable, asesoría fiscal, contadores para pymes, servicios contables, declaración de impuestos, outsourcing contable, consultoría financiera, contabilidad de empresas, optimización fiscal, cumplimiento tributario, estados financieros, contadores especializados">
+  
+  <!-- Meta Robots: Indica a los motores de búsqueda si deben indexar y seguir la página -->
+  <meta name="robots" content="index, follow">
+  
+
+
+  <!-- Etiqueta Canonical: Evita problemas de contenido duplicado al señalar la URL preferida -->
+  <link rel="canonical" href="https://www.P&G.cl/">
+ 
+  
+  <!-- Etiquetas Open Graph: Mejora la apariencia de la página al compartirla en redes sociales -->
+  <meta property="og:title" content="Tu Contador Amigo | P&G">
+  <meta property="og:description"  content="Servicios de contabilidad profesional, auditoría y asesoría fiscal para pymes y grandes empresas. Nuestro equipo de contadores te ayuda a optimizar tus finanzas y garantizar el cumplimiento legal.">
+  <meta property="og:image" content="https://www.wormaldsecurity.cl/images/seguridad.jpg">
+  <meta property="og:url" content="https://www.wormaldsecurity.cl/servicios-de-seguridad">
+  <meta property="og:type" content="website">
+  
+  <!-- Etiquetas de Twitter Cards: Personaliza cómo se muestra el enlace en Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tu Contador Amigo | P&G">
+  <meta name="twitter:description"  content="Servicios de contabilidad profesional, auditoría y asesoría fiscal para pymes y grandes empresas. Nuestro equipo de contadores te ayuda a optimizar tus finanzas y garantizar el cumplimiento legal.">
+  <meta name="twitter:image" content="https://www.wormaldsecurity.cl/images/seguridad.jpg">
+  
+  <!-- Etiquetas Hreflang: Define el idioma y región para sitios multilingües -->
+  <link rel="alternate" href="https://www.wormaldsecurity.cl" hreflang="es-cl">
+  <link rel="alternate" href="https://www.wormaldsecurity.com/en" hreflang="en-us">
+
+</head>
+
+
+
+
+  <!-- Etiqueta Schema Markup (JSON-LD): Ayuda a los motores de búsqueda a entender mejor el contenido -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tu Contador Amigo | P&G",
+      "url": "https://www.PG.cl",
+      "logo": "https://www.PG.cl/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+56 9 9280 6866",
+        "contactType": "Contador",
+        "areaServed": "CL"
+      }
+    }
+    </script>
+
+
+<link rel="icon" href="style/img/interno/iconLogo.ico" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-light: #2563eb;
+            --color-amarillo: #facc15;
+            --color-segundario-naranjo: #FF8800;
+            --color-azul-oscuro: #1A237E;
+            --color-azul-claro: #2979FF;
+            --white: #ffffff;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        /* Enhanced Navbar Styling */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(30, 58, 138, 0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-link {
+            color: var(--primary-color) !important;
+            font-weight: 500;
+            margin: 0 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 30px;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-contact:hover {
+            background-color: var(--color-segundario-naranjo);
+            color: var(--white);
+        }
+
+        /* Enhanced Services Section */
+        .services-section {
+            background-color: var(--gray-100);
+            padding: 5rem 0;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(30, 58, 138, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: 1px solid var(--gray-200);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(30, 58, 138, 0.15);
+        }
+
+        .service-card-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .service-card-body {
+            padding: 1.5rem;
+        }
+
+        /* Enhanced FAQ Section */
+        .faq-section {
+            padding: 5rem 0;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .accordion-item {
+            border: 1px solid var(--gray-200);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background-color: var(--white);
+            color: var(--primary-color);
+            font-weight: 500;
+            padding: 1.5rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: var(--primary-color);
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0;
+        }
+
+        .footer-contact {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-contact i {
+            margin-right: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /*css carrusel*/
+        .client-logos {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+
+        .carousel-item img {
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(0);
+            transition: filter 0.3s ease;
+        }
+
+        .carousel-item img:hover {
+            filter: grayscale(0);
+        }
+
+        .carousel-indicators {
+            bottom: -50px;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            border: none;
+            margin: 0 5px;
+        }
+
+        .carousel-indicators .active {
+            background-color: #666;
+        }
+
+        .section-title {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .logo-wrapper {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+      
+        /*formulario de contacto*/
+
+        .contact-section {
+            padding: 80px 0;
+        }
+
+        .contact-info-box {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .small-heading {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .main-heading {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .icon-box {
+            background-color: #3b82f6;
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--white);
+        }
+
+        .contact-item-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        .contact-item-content p {
+            color: #666;
+            margin: 0;
+        }
+
+        .form-control {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+
+        .btn-submit {
+            background-color: #28449f;
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #facc15;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        .hero-section {
+            background-color: var(--color-gris-claro);
+            padding: 5rem 0;
+        }
+
+        .hero-section h1 {
+            color: var(--color-azul-oscuro);
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .titleColorPrimario{
+            color: var(--color-azul-oscuro);
+        }
+        .titleColorSegundario{
+            color: var(--color-azul-oscuro);
+        }
+
+         .titleColorSegundario:hover {
+            color: var(--color-segundario-naranjo);
+        }
+
+        .style-text-car{
+            background-color: var(--color-azul-oscuro);
+    color: white;
+    padding: 9px 9px 0px 9px;
+    border-radius: 10px;
+        }
+
+        .section-title-service{
+            height: 75px;
+        }
+
+        /*servicio 2.0*/
+        .services-section {
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-azul-oscuro) 0%, rgba(30,55,153,0.8) 100%);
+            clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+            z-index: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background: var(--color-azul-oscuro);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border: none;
+            padding: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-body {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Specific backgrounds for each card */
+        .service-card.pymes .card-body {
+            background-image: url('style/img/interno/servicioPyme.jpeg');
+        }
+
+        .service-card.emprendedor .card-body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/servicioPremiun-sgQki2T2U7OhbTJgWolufd2SXH5to3.jpeg');
+        }
+
+        .service-card.sii .card-body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/publicidad-pg9X6TmvU9GPoMLCoxOd5ABjcRKPRK.jpeg');
+        }
+
+        .card-body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: -1;
+        }
+        
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .service-list li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--color-segundario-naranjo);
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .service-list li:hover {
+            background: rgba(255, 107, 1, 0.1);
+            transform: translateX(5px);
+        }
+
+        .price-tag {
+            color: var(--color-segundario-naranjo);
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .contact-button {
+            background: var(--color-segundario-naranjo);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            background: #e65c00;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 92, 0, 0.3);
+        }
+
+        .contact-button img {
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-button:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .service-card::before {
+                clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+            }
+            
+            .card-header {
+                font-size: 1.25rem;
+                padding: 1rem;
+            }
+            
+            .price-tag {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Ocultar todas las imágenes inicialmente */
+.slide-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;    transition: opacity 1s ease-in-out;
+
+}
+
+/* Clase para mostrar la imagen actual */
+.show {
+    display: block;transition: opacity 1s ease-in-out;
+}
+ </style>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="style/img/interno/LogoIcon2.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nuestrosClientes">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">PREGUNTAS FRECUENTES</a>
+                    </li>
+                </ul><a href="#contactanos">
+                <button class="btn btn-contact" >CONTACTANOS</button></a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- HOME -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="mb-4">"Más que contadores, somos tus socios estratégicos."</h1>
+                    <p class="lead">Gestión y asesoría integral para el cumplimiento contable, laboral, legal y tributario de medianas y grandes empresas.</p>
+                    <a href="https://wa.me/56991294195?text=¡Hola!%20Estoy%20interesado%20en%20una%20asesoría%20contable%20y%20me%20gustaría%20obtener%20más%20información." 
+                    class="btn btn-contact mt-3" target="_blank">Solicita una asesoría</a>
+            
+                </div>
+                <div class="col-md-6 image-slider mt-2 mt-md-0">
+                    <img src="style/img/interno/publicidad.jpeg" alt="P&G Hero Image 1" class="img-fluid slide-image">
+                    <img src="style/img/interno/servicioPremiun.jpeg" alt="P&G Hero Image 2" class="img-fluid slide-image">
+                    <img src="style/img/interno/servicioPyme.jpeg" alt="P&G Hero Image 3" class="img-fluid slide-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="container py-5 services-section "  id="servicios">
+        <h2 class="text-center mb-5" style="color: var(--color-azul-oscuro);">Nuestros Servicios</h2>
+        
+        <div class="row g-4">
+            <!-- Plan PYMES -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow">
+                    <div class="card-header text-center py-3">
+                        Plan PYMES
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="service-list mb-4">
+                            <li>Asesoría Tributaria</li>
+                            <li>Libros Contables</li>
+                            <li>Declaración de Impuesto Mensual</li>
+                            <li>Conciliaciones Bancarias</li>
+                            <li>Reestructuración de Balances</li>
+                            <li>Término de Giro</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="price-tag mb-3">$45.990</div>
+                            <a href="https://wa.me/56991294195" class="btn contact-button text-white">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" 
+                                     alt="WhatsApp" 
+                                     style="width: 20px; margin-right: 8px;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Plan Emprendedor -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow">
+                    <div class="card-header text-center py-3">
+                        Plan Emprendedor
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="service-list mb-4">
+                            <li>Inicio de Actividades</li>
+                            <li>Asesoría Tributaria</li>
+                            <li>Facturación Electrónica</li>
+                            <li>Libros Contables</li>
+                            <li>Declaración de Impuesto Mensual</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="price-tag mb-3">$55.990</div>
+                            <a href="https://wa.me/56991294195" class="btn contact-button text-white">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" 
+                                     alt="WhatsApp" 
+                                     style="width: 20px; margin-right: 8px;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Servicios SII -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card service-card shadow">
+                    <div class="card-header text-center py-3">
+                        Servicios SII
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="service-list mb-4">
+                            <li>Declaración Renta Anual</li>
+                            <li>Rectificación de F29-F22</li>
+                            <li>Reestructuración de Balances</li>
+                            <li>Asesoría Especializada</li>
+                            <li>Regularización Tributaria</li>
+                        </ul>
+                        <div class="text-center mt-auto">
+                            <div class="price-tag mb-3">$65.990</div>
+                            <a href="https://wa.me/56991294195" class="btn contact-button text-white">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" 
+                                     alt="WhatsApp" 
+                                     style="width: 20px; margin-right: 8px;">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- nuestros clientes -->
+    <section class="client-logos " id="nuestrosClientes">
+        <div class="container">
+            <h2 class="section-title titleColorPrimario">Algunos de nuestros clientes</h2>
+            
+            <div id="clientLogosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Primer grupo de logos -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg1.jpeg" alt="Logo Cliente 1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg2.jpeg" alt="Logo Cliente 2" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg3.jpeg" alt="Logo Cliente 3" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg4.png" alt="Logo Cliente 4" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Segundo grupo de logos -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg5.jpeg" alt="Logo Cliente 5" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg6.jpeg" alt="Logo Cliente 6" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg7.jpeg" alt="Logo Cliente 7" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-wrapper">
+                                    <img src="style/img/lgc/lg8.jpeg" alt="Logo Cliente 8" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#clientLogosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#clientLogosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" py-1">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-4 titleColorPrimario">Quiénes Somos</h2>
+                <p class="text-center lead">
+                    Somos una empresa de contabilidad comprometida con el crecimiento de tu negocio. Ofrecemos servicios integrales y personalizados, adaptados a las necesidades de cada cliente. Desde la creación y transformación de empresas hasta la gestión contable y tributaria, nuestro equipo de expertos está aquí para simplificar tus procesos, asegurar el cumplimiento normativo y ayudarte a alcanzar tus objetivos financieros.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Preguntas Frecuentes -->
+     <section id="faq" class="services-section py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- Pregunta 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Qué debo hacer como contribuyente?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nuestro equipo te guiará paso a paso. Solo necesitas tu compromiso para mantener al día tus documentos y juntos alcanzaremos el éxito en tu proyecto.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Qué documentos necesito para externalizar mi contabilidad?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Solo necesitamos tu usuario y clave del SII. Si tu empresa tiene antigüedad, requerimos informes tributarios detallados. Recuerda, nuestro trabajo va más allá de un simple balance: optimizamos tu contabilidad para que puedas concentrarte en tu negocio.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        ¿En qué consiste la asesoría contable?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        La asesoría contable te ayuda a organizar las finanzas de tu negocio, optimizando recursos y evitando sorpresas con los impuestos. Con nuestro equipo, tomarás decisiones informadas y estratégicas para el crecimiento de tu empresa, garantizando siempre el cumplimiento legal.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        ¿Qué es la contabilidad y por qué es importante?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        La contabilidad es el sistema que registra y analiza todas las transacciones financieras de tu negocio. Es esencial para conocer el estado financiero, tomar decisiones informadas y cumplir con las obligaciones legales. Sin una buena contabilidad, es fácil perder el control de los recursos y arriesgar sanciones o problemas económicos.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        ¿Qué significa "Inicio de Actividades"?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        El "Inicio de Actividades" es una declaración obligatoria ante el SII para comenzar cualquier negocio formalmente. Este proceso permite a tu empresa operar legalmente y estar al día con las obligaciones tributarias desde el primer día.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </section>
+
+    <!-- formulario de contacto -->
+    <section class="contact-section" id="contactanos">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Columna de información -->
+                <div class="col-lg-5 p-0">
+                    <h2 class="small-heading">Hablemos</h2>
+                    <div class="contact-info-box">
+                        <h1 class="main-heading">Contáctanos</h1>
+                        <p class="description">Asesórate con expertos.<br>
+                            Gestión y asesoría integral para el cumplimiento contable, laboral, legal y tributario de medianas y grandes empresas.</p>
+                        
+                        <!-- Correo electrónico -->
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Correo electrónico</h3>
+                                <p>maxgarrido174@gmail.com</p>
+                            </div>
+                        </div>
+                
+                        <!-- Teléfono -->
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Celular</h3>
+                                <p>+56 9 9129 4195</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna del formulario -->
+                <div class="col-lg-7 text-center">
+                    <img src="style/img/interno/LogoPrincipal.png" alt="P&G Hero Image" class="img-fluid mt-2 mt-md-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/56991294195" class="whatsapp-button" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <img src="style/img/interno/LogoIcon2.png" alt="Logo de la empresa" class="footer-logo img-fluid" style="height: 70px; width: 180px;">
+            </div>
+
+            <!-- Datos de Contacto -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h3 class="h5">Datos de Contacto</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>WhatsApp Clientes:</strong> <a href="https://wa.me/56991294195" class="text-light">+56 9 9129 4195</a></li>
+                    <li class="mb-2"><strong>WhatsApp Ventas:</strong> <a href="https://wa.me/56991294195" class="text-light">+56 9 9129 4195</a></li>
+                    <li><strong>Correo Ventas:</strong> <a href="mailto:maxgarrido174@gmail.com" class="text-light">maxgarrido174@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Rápidos -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h3 class="h5">Enlaces Útiles</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#servicios" class="text-light">Servicios</a></li>
+                    <li><a href="#nuestrosClientes" class="text-light">Acerca de Nosotros</a></li>
+                    <li><a href="#contactanos" class="text-light">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <h3 class="h5">Síguenos</h3>
+                <div class="social-icons d-flex justify-content-center gap-3">
+                    <a href="#" aria-label="Facebook" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Linkedin" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-4">
+            <small>&copy; 2024 Contable. Todos los derechos reservados.</small>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <!-- Efecto Home --> 
+    <script src="js/homeefect.js" crossorigin="anonymous"></script>
+
+    <!-- javascript Especial -->
+    <script>
+        // Inicializar el carrusel con un intervalo de 3 segundos
+        const carousel = new bootstrap.Carousel(document.getElementById('clientLogosCarousel'), {
+            interval: 3000,
+            touch: true
+        });
+
+    </script>
+
+
+</body>
+</html>
