@@ -1,0 +1,53 @@
+:root {
+    --color-primary: #DC2A17;
+    --color-secondary: #FFD3D3;
+    --color-accent: #FF1744;
+    --color-background: #FFF5F5;
+    --color-text: #333333;
+    --color-cream: #FFF0E6;
+}
+:root {
+    --color-red-1: #EF381E;
+    --color-red-2: #DC2A17;
+    --color-red-3: #C91C0F;
+    --color-red-4: #B70E08;
+    --color-red-5: #A40000;
+}
+.home-section {
+    background-image:  url('../imagenes/home.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+/*Titulos*/
+
+h1, h2, h3, .cursive {
+    font-family: 'Great Vibes', cursive;
+    color: var(--color-red-5);
+}
+
+.colorTexto-red-1{
+    color: var(--color-red-1);
+}
+.colorTexto-red-2{
+    color: var(--color-red-2);
+}
+.colorFondo-red-2{
+    background-color: var(--color-red-2);
+}
+.colorTexto-red-3{
+    color: var(--color-red-3);
+}
+.colorTexto-red-4{
+    color: var(--color-red-4);
+}
+.colorTexto-red-5{
+    color: var(--color-red-5);
+}
