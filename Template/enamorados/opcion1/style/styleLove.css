@@ -44,11 +44,15 @@ h1, h2, h3, .cursive {
 .colorFondo-red-2{
     background-color: var(--color-red-2) !important;
 }
+
 .colorTexto-red-3{
     color: var(--color-red-3);
 }
 .colorTexto-red-4{
     color: var(--color-red-4);
+}
+.colorFondo-red-4{
+    background-color: var(--color-red-4) !important;
 }
 .colorTexto-red-5{
     color: var(--color-red-5);
@@ -76,12 +80,14 @@ h1, h2, h3, .cursive {
 
 
 
-
-
-
-
-
-
+.titulo-sombra {
+padding-right: 70px;
+padding-left: 70px;
+    text-shadow: -3px -2px 28px rgba(0,0,0,0.63);
+    box-shadow: -14px 12px 80px -20px rgba(0,0,0,0.75);
+-webkit-box-shadow: -14px 12px 80px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: -14px 12px 80px -20px rgba(0,0,0,0.75);
+}
 
 .carousel-container {
     max-width: 1800px;
