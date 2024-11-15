@@ -127,17 +127,7 @@ body {
     border-radius: 10px;
     padding: 20px;
 }
-.timeline-date {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--color-primary);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-size: 0.8rem;
-}
+
 .card {
     border-color: var(--color-secondary);
     border-radius: 15px;
@@ -182,14 +172,7 @@ body {
     background-color: var(--color-cream);
     padding: 50px 0;
 }
-.poetic-testament {
-    background-color: var(--color-cream);
-    border: 2px solid var(--color-primary);
-    border-radius: 15px;
-    padding: 30px;
-    font-style: italic;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+
 @media (max-width: 768px) {
     .timeline::before {
         left: 31px;
