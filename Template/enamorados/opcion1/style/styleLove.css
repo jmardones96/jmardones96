@@ -203,3 +203,17 @@ padding-left: 70px;
 .pulse {
     animation: pulse 2s infinite;
 }
+
+
+.clip-path-example {
+    width: 200px;
+    height: 200px;
+    background-color: #007bff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s ease;
+  }
+
+  .clip-path-example:hover {
+    clip-path: circle(50% at 50% 50%);
+  }
+

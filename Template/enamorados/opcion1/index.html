@@ -17,6 +17,12 @@
         <link rel="stylesheet" href="style/lovePageStyle.css">
         <link rel="stylesheet" href="style/styleLove.css">
 
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
     </head>
     <body>
         <!---->
@@ -80,11 +86,14 @@
         <section class="section-red" id="galeria">
           <div class="text-center">
            <div class=" titulo-sombra">
+
              <h1 class=" animate__animated animate__fadeIn animate__slower">Amar es nuestra mejor aventura</h1>
              <p class=" lead colorTexto-white-1 animate__animated animate__fadeIn animate__slower mt-0">Cada instante contigo es un recuerdo para atesorar.</p>
            </div>
 
-           <div class="carousel-container">
+           <div class="carousel-container"  data-aos="fade-right"
+           data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
               <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                       <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -137,28 +146,29 @@
               </div>
           </div>
         </section>
-
-
-            <main>
             <!--Nuestra historia-->
-            <section id="historia" class="section-red">
-                <div class="container">
-                    <h2 class="text-center mb-4">Nuestra Historia</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="imagenes/noviosSinFondo.png" alt="Pareja feliz" class="img-fluid rounded" title="Pareja feliz" loading="lazy">                        </div>
-                        <div class="col-md-6 colorTexto-white-1">
-                            <p>Aquí puedes contar tu historia de amor. Comparte cómo se conocieron, sus primeras citas, momentos especiales y todo lo que hace única su relación.</p>
-                        </div>
+        <section id="historia" class="section-red">
+            <div class="container">
+                <h2 class="text-center mb-4">Nuestra Historia</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img data-aos="zoom-out" src="imagenes/noviosSinFondo.png" alt="Pareja feliz" class="img-fluid rounded" title="Pareja feliz" loading="lazy">                        </div>
+                    <div class="col-md-6 colorTexto-white-1">
+                        <p>Aquí puedes contar tu historia de amor. Comparte cómo se conocieron, sus primeras citas, momentos especiales y todo lo que hace única su relación.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+
+       <main>
 
             <section id="timeline" class="section-white">
                 <div class="container">
                     <h2 class="text-center mb-4">Línea de Tiempo</h2>
                     <div class="timeline">
-                        <div class="timeline-item left">
+                        <div class="timeline-item left" data-aos="zoom-out-up" data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <div class="timeline-date">15 Ene 2023</div>
                             <div class="card">
                                 <div class="card-body">
@@ -168,7 +178,8 @@
                             </div>
                         
                         </div>
-                        <div class="timeline-item right">
+                        <div class="timeline-item right" data-aos="zoom-out-up" data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <div class="timeline-date">28 Ene 2023</div>
                             <div class="card">
                                 <div class="card-body">
@@ -177,12 +188,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="timeline-item left">
+                        <div class="timeline-item left" data-aos="zoom-out-up" data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <div class="timeline-date">15 Feb 2023</div>
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Aniversario</h5>
                                     <p class="card-text">Descripción del aniversario</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item right" data-aos="zoom-out-up" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <div class="timeline-date">28 Ene 2023</div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primera cita</h5>
+                                    <p class="card-text">Descripción de la primera cita</p>
                                 </div>
                             </div>
                         </div>
@@ -195,21 +217,37 @@
                     <h2 class="text-center mb-4">Mensajes de Amor</h2>
                     <div class="chat-container">
                         <div class="d-flex flex-column">
-                            <div class="message message-sent">
+                            <div class="message message-sent " data-aos="zoom-in-up">
                                 <p>Hola amor, ¿cómo estás?</p>
                                 <div class="message-time">10:30</div>
                             </div>
-                            <div class="message message-received">
+                            <div class="message message-received" data-aos="zoom-in-up">
                                 <p>¡Hola cariño! Estoy bien, ¿y tú?</p>
                                 <div class="message-time">10:32</div>
                             </div>
-                            <div class="message message-sent">
+                            <div class="message message-sent" data-aos="zoom-in-up">
                                 <p>Muy bien, pensando en ti como siempre ❤️</p>
                                 <div class="message-time">10:33</div>
                             </div>
-                            <div class="message message-received">
+                            <div class="message message-received"  data-aos="zoom-in-up">
                                 <p>Aww, ¡qué lindo! Yo también pienso mucho en ti 😘</p>
                                 <div class="message-time">10:35</div>
+                            </div>
+                            <div class="message message-sent " data-aos="zoom-in-up">
+                                <p>Hola amor, ¿cómo estás?</p>
+                                <div class="message-time">10:30</div>
+                            </div>
+                            <div class="message message-received" data-aos="zoom-in-up">
+                                <p>¡Hola cariño! Estoy bien, ¿y tú?</p>
+                                <div class="message-time">10:32</div>
+                            </div>
+                            <div class="message message-sent " data-aos="zoom-in-up">
+                                <p>Hola amor, ¿cómo estás?</p>
+                                <div class="message-time">10:30</div>
+                            </div>
+                            <div class="message message-received" data-aos="zoom-in-up">
+                                <p>¡Hola cariño! Estoy bien, ¿y tú?</p>
+                                <div class="message-time">10:32</div>
                             </div>
                         </div>
                     </div>
@@ -434,5 +472,9 @@
         document.head.appendChild(style);
     });
 </script>
+
+<script>
+    AOS.init();
+  </script>
     </body>
     </html>
