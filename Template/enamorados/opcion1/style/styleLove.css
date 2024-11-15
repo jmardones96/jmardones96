@@ -14,7 +14,7 @@
     --color-red-5: #A40000;
 }
 .home-section {
-    background-image:  url('../imagenes/home.png');
+    background-image:  url('../imagenes/RosasHome.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -30,9 +30,11 @@
 
 h1, h2, h3, .cursive {
     font-family: 'Great Vibes', cursive;
-    color: var(--color-red-5);
+    color: white;
 }
-
+.colorTexto-white-1{
+    color: white;
+}
 .colorTexto-red-1{
     color: var(--color-red-1);
 }
@@ -40,7 +42,7 @@ h1, h2, h3, .cursive {
     color: var(--color-red-2);
 }
 .colorFondo-red-2{
-    background-color: var(--color-red-2);
+    background-color: var(--color-red-2) !important;
 }
 .colorTexto-red-3{
     color: var(--color-red-3);
@@ -50,4 +52,148 @@ h1, h2, h3, .cursive {
 }
 .colorTexto-red-5{
     color: var(--color-red-5);
+}
+
+
+.section-red {
+    background-color: var(--color-red-5);
+    padding: 50px 0;
+}
+
+
+
+.section-red-2 {
+    background-color: var(--color-red-2);
+    padding: 50px 0;
+}
+
+.section-red-1 {
+    background-color: var(--color-red-1);
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    max-width: 1800px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    height: 650px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.carousel-item.active img {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    border-radius: 15px 15px 0 0;
+    padding: 30px 20px 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-item.active .carousel-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-container:hover .carousel-control-prev,
+.carousel-container:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.caption-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.caption-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: width 0.1s linear;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
 }
