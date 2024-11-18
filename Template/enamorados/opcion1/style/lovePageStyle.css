@@ -24,19 +24,7 @@ body {
     position: relative;
     z-index: 1;
 }
-.btn-love {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
-    color: white;
-    border-radius: 25px;
-    padding: 10px 25px;
-    transition: all 0.3s ease;
-}
-.btn-love:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    transform: scale(1.05);
-}
+
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -133,6 +121,9 @@ body {
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
+    background-image:  url('../imagenes/fondoLineas.png');
+    background-size: cover;
+    background-position: center;
 }
 .card:hover {
     transform: translateY(-5px);
