@@ -37,6 +37,8 @@
   <!-- Etiquetas Hreflang: Define el idioma y región para sitios multilingües -->
   <link rel="alternate" href="https://www.wormaldsecurity.cl" hreflang="es-cl">
   <link rel="alternate" href="https://www.wormaldsecurity.com/en" hreflang="en-us">
+  <!--aos library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -462,6 +464,169 @@
         .section-title-service{
             height: 75px;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*servicio 2.0*/
+        .services-section {
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-azul-oscuroro) 0%, rgba(30,55,153,0.8) 100%);
+            clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+            z-index: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            background: var(--color-azul-oscuro);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border: none;
+            padding: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-body {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 2;
+        }
+
+         /* Specific backgrounds for each card */
+         .service-card.pymes .card-body {
+            background-image: url('style/img/cc/logoCC.png');
+        }
+
+        .service-card.emprendedor .card-body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/servicioPremiun-sgQki2T2U7OhbTJgWolufd2SXH5to3.jpeg');
+        }
+
+        .service-card.sii .card-body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/publicidad-pg9X6TmvU9GPoMLCoxOd5ABjcRKPRK.jpeg');
+        }
+
+        .card-body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: -1;
+        }
+        
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .service-list li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--color-amarillo);
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+        
+        .service-list li:hover {
+            background: rgba(255, 107, 1, 0.1);
+            transform: translateX(5px);
+        }
+
+        .price-tag {
+            color: var(--color-azul-oscuro);
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        
+        .contact-button {
+            background: var(--color-amarillo);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            background: var(--color-azul-claro);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 92, 0, 0.3);
+        }
+
+        .contact-button img {
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-button:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .service-card::before {
+                clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+            }
+            
+            .card-header {
+                font-size: 1.25rem;
+                padding: 1rem;
+            }
+            
+            .price-tag {
+                font-size: 1.5rem;
+            }
+        }
+
  </style>
 
 </head>
@@ -502,14 +667,14 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up"   data-aos-duration="3000">
                     <h1 class="mb-4">"Más que contadores, somos tus socios estratégicos."</h1>
                     <p class="lead">Gestión y asesoría integral para el cumplimiento contable, laboral, legal y tributario de medianas y grandes empresas.</p>
                     <a href="https://wa.me/56992806866?text=¡Hola!%20Estoy%20interesado%20en%20una%20asesoría%20contable%20y%20me%20gustaría%20obtener%20más%20información." 
                     class="btn btn-contact mt-3" target="_blank">Solicita una asesoría</a>
             
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6 "  data-aos="fade-up"   data-aos-duration="3000">
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-vAHfM5aZnIlxXZf5cyUrWeNoce2F83.png" alt="CONTACONTÁI Hero Image" class="img-fluid mt-2 mt-md-0">
                 </div>
             </div>
@@ -517,102 +682,97 @@
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="services-section py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5 titleColorPrimario">Nuestros Servicios</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- Inicio de la Tarjeta de Servicio -->
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Creación y Transformación de Empresas <i class="bi bi-person-lines-fill "></i></h3></div>
-                        <p class="style-text-car">Desde la idea inicial hasta la consolidación, te ayudamos a dar forma a tu negocio.</p>
+    <section class="container py-5 services-section" id="servicios">
+        <h2 class="section-title text-center mb-5 titleColorPrimario" data-aos="fade-up" data-aos-duration="3000">Nuestros Servicios</h2>
+        <div class="row g-4">
+            <!-- Plan Básico -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card service-card shadow">
+                <div class="card-header text-center py-3">
+                    Plan Básico
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <ul class="service-list mb-4">
+                        <li>Creación y Transformación de Empresas</li>
+                        <li>Inscripción de Boletas</li>
+                        <li>Inscripción de Factura Electrónica</li>
+                        <li>Declaración de Impuestos Mensuales</li>
+                        <li>Balances Financieros</li>
+                        <li>Finiquitos de Trabajo</li>
+                    </ul>
+                    <div class="text-center mt-auto" data-aos="flip-right" data-aos-duration="1000">
+                        Desde
+                        <div class="price-tag mb-3">$40.000</div>
+                        <a href="https://wa.me/56991294195?text=¡Hola!%20Estoy%20interesado%20en%20el%20plan%20Básico.%20Creo%20que%20es%20perfecto%20para%20mi%20negocio.%20¿Cómo%20podemos%20continuar?%20¡Gracias!" class="btn contact-button text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="WhatsApp" style="width: 20px; margin-right: 8px;">
+                            Contáctanos
+                        </a>
                     </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Inicio de Actividades SII (1ª y 2ª Categoría)</h3></div>
-                        <p class="style-text-car">Simplificamos el proceso para que comiences a operar sin complicaciones.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Plan Intermedio -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="3500">
+            <div class="card service-card shadow">
+                <div class="card-header text-center py-3">
+                    Plan Intermedio
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <ul class="service-list mb-4">
+                        <li>Inicio de Actividades SII (1ª y 2ª Categoría)</li>
+                        <li>Certificado Digital y Centralización</li>
+                        <li>Diversidad de Declaraciones Juradas</li>
+                        <li>Contratos Laborales</li>
+                        <li>Liquidaciones de Sueldo</li>
+                        <li>Gestión de Licencias, CCAF y COMPIN</li>
+                    </ul>
+                    <div class="text-center mt-auto" data-aos="flip-left" data-aos-duration="1000">
+                        Desde
+                        <div class="price-tag mb-3">$100.000</div>
+                        <a href="https://wa.me/56991294195?text=¡Hola!%20Estoy%20interesado%20en%20el%20plan%20Intermedio.%20Creo%20que%20es%20perfecto%20para%20mi%20negocio.%20¿Cómo%20podemos%20continuar?%20¡Gracias!" class="btn contact-button text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="WhatsApp" style="width: 20px; margin-right: 8px;">
+                            Contáctanos
+                        </a>
                     </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Inscripción de Boletas</h3></div>
-                        <p class="style-text-car">Gestionamos la inscripción de tus boletas para que puedas enfocarte en lo que realmente importa.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Plan Premium -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="4000">
+            <div class="card service-card shadow">
+                <div class="card-header text-center py-3">
+                    Plan Premium
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <ul class="service-list mb-4">
+                        <li>Creación y Transformación de Empresas</li>
+                        <li>Inicio de Actividades SII (1ª y 2ª Categoría)</li>
+                        <li>Inscripción de Boletas</li>
+                        <li>Inscripción de Factura Electrónica</li>
+                        <li>Certificado Digital y Centralización</li>
+                        <li>Declaración de Impuestos Mensuales</li>
+                        <li>Balances Financieros</li>
+                        <li>Diversidad de Declaraciones Juradas</li>
+                        <li>Contratos Laborales</li>
+                        <li>Finiquitos de Trabajo</li>
+                        <li>Gestión de Licencias, CCAF y COMPIN</li>
+                    </ul>
+                    <div class="text-center mt-auto" data-aos="flip-right" data-aos-duration="1000">
+                        <div class="price-tag mb-3">$150.000</div>
+                        <a href="https://wa.me/56991294195?text=¡Hola!%20Estoy%20interesado%20en%20el%20plan%20Premium.%20Creo%20que%20es%20perfecto%20para%20mi%20negocio.%20¿Cómo%20podemos%20continuar?%20¡Gracias!" class="btn contact-button text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="WhatsApp" style="width: 20px; margin-right: 8px;">
+                            Contáctanos
+                        </a>
                     </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                         <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario ">Inscripción de Factura Electrónica</h3></div>
-                        <p class="style-text-car">Digitaliza tu facturación  con nuestra asistencia experta.</p>
-                    </div> 
-                </article> 
-                <article class="col"> 
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Certificado Digital y Centralización</h3></div>
-                        <p class="style-text-car">Protege tu información y centraliza tus operaciones con nuestras soluciones digitales.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Declaración de Impuestos Mensuales</h3></div>
-                        <p class="style-text-car">Mantén tus impuestos al día con nuestro servicio de declaración mensual.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Balances Financieros</h3></div>
-                        <p class="style-text-car">Obtén una visión clara y precisa de la salud financiera de tu empresa.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Diversidad de Declaraciones Juradas</h3></div>
-                        <p class="style-text-car">Nos encargamos de todas tus declaraciones juradas, sin importar su complejidad.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Contratos Laborales</h3></div>
-                        <p class="style-text-car">Redactamos y gestionamos tus contratos laborales para asegurar el cumplimiento legal.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Finiquitos de Trabajo</h3></div>
-                        <p class="style-text-car">Maneja los finiquitos de manera profesional y sin estrés.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Liquidaciones de Sueldo</h3></div>
-                        <p class="style-text-car">Asegura la precisión en las liquidaciones de sueldo de tus empleados.</p>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="service-card h-100 p-4 shadow-sm">
-                        <div class="section-title-service">
-                        <h3 class="service-card-title titleColorSegundario">Gestión de Licencias, CCAF y COMPIN</h3></div>
-                        <p class="style-text-car">Simplificamos la gestión de licencias y beneficios para tus empleados.</p>
-                    </div>
-                </article>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
     <!-- nuestros clientes -->
     <section class="client-logos " id="nuestrosClientes">
-        <div class="container">
+        <div class="container"  data-aos="fade-up" data-aos-duration="3000">
             <h2 class="section-title titleColorPrimario">Algunos de nuestros clientes</h2>
             
             <div id="clientLogosCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -678,9 +838,11 @@
             </div>
         </div>
     </section>
+
+    <!-- Quiénes Somos -->
     <section class=" py-1">
         <div class="container">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-8 mx-auto"  data-aos="fade-up" data-aos-duration="3000">
                 <h2 class="text-center mb-4 titleColorPrimario">Quiénes Somos</h2>
                 <p class="text-center lead">
                     Somos una empresa de contabilidad comprometida con el crecimiento de tu negocio. Ofrecemos servicios integrales y personalizados, adaptados a las necesidades de cada cliente. Desde la creación y transformación de empresas hasta la gestión contable y tributaria, nuestro equipo de expertos está aquí para simplificar tus procesos, asegurar el cumplimiento normativo y ayudarte a alcanzar tus objetivos financieros.
@@ -689,8 +851,8 @@
         </div>
     </section>
 
-<!-- Preguntas Frecuentes -->
-<section id="faq" class="services-section py-5">
+     <!-- Preguntas Frecuentes -->
+     <section id="faq" class="services-section py-5"  data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
         <h2 class="section-title text-center mb-5">Preguntas Frecuentes</h2>
         <div class="accordion" id="faqAccordion">
@@ -765,11 +927,11 @@
             </div>
         </div>
     </div>
-</section>
+     </section>
 
     <!-- formulario de contacto -->
     <section class="contact-section" id="contactanos">
-        <div class="container">
+        <div class="container"  data-aos="fade-up" data-aos-duration="3000">
             <div class="row g-4">
                 <!-- Columna de información -->
                 <div class="col-lg-5 p-0">
@@ -811,7 +973,7 @@
     </section>
     
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/56992806866" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/56992806866?text=¡Hola!%20Estoy%20interesado%20en%20una%20asesoría%20contable%20y%20me%20gustaría%20obtener%20más%20información." class="whatsapp-button" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
 
@@ -866,6 +1028,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+   <!-- AOS Library -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-- javascript Especial -->
     <script>
@@ -875,7 +1040,9 @@
             touch: true
         });
     </script>
-
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
