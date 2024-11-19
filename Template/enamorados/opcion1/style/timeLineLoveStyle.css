@@ -1,0 +1,129 @@
+
+/*time love*/
+
+/*time love*/
+
+.linelove-section {
+    padding: 2rem 0; /* Reducido a la mitad */
+}
+
+.linelove-title {
+    color: var(--color-red-3);
+    margin-bottom: 1.5rem; /* Reducido a la mitad */
+}
+
+.linelove-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linelove-timeline::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--color-red-2);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -15px; /* Centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.linelove-container {
+    padding: 5px 20px; /* Reducido a la mitad */
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-bottom: 10px; /* Reducido a la mitad */
+}
+
+.linelove-container::after {
+    content: '\2665';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -15px;
+    background-color: white;
+    border: 3px solid var(--color-red-4);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-red-4);
+    font-size: 10px;
+}
+
+.linelove-left {
+    left: 0;
+}
+
+.linelove-right {
+    left: 50%;
+}
+
+.linelove-right::after {
+    left: -12px;
+}
+.linelove-content {
+    padding: 10px 15px; /* Espaciado ajustado */
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image: radial-gradient(at 40% 20%, hsla(359, 0%, 100%, 0.57) 0px, transparent 50%),
+                      radial-gradient(at 80% 0%, hsla(358, 100%, 98%, 0.57) 0px, transparent 50%),
+                      radial-gradient(at 0% 50%, hsla(355, 96%, 78%, 0.16) 0px, transparent 50%),
+                      radial-gradient(at 80% 50%, hsla(359, 100%, 66%, 0.05) 0px, transparent 50%),
+                      radial-gradient(at 0% 100%, hsla(359, 100%, 81%, 0) 0px, transparent 50%),
+                      radial-gradient(at 80% 100%, hsla(356, 55%, 97%, 0.63) 0px, transparent 50%),
+                      radial-gradient(at 0% 0%, hsla(359, 100%, 99%, 1) 0px, transparent 50%);
+    position: relative;
+    transition: all 0.3s ease;
+    animation: animateBackground 8s infinite alternate ease-in-out; /* Animación al fondo */
+}
+
+.linelove-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.171);
+}
+
+
+.linelove-date {
+    font-weight: bold;
+    color: var(--color-red-5);
+    margin-bottom: 5px;
+}
+
+.linelove-text {
+    color: #6c757d;
+}
+
+@media screen and (max-width: 600px) {
+    .linelove-timeline::after {
+        left: 31px;
+    }
+
+    .linelove-container {
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 12px;
+    }
+
+    .linelove-container::after {
+        left: 15px;
+    }
+
+    .linelove-right {
+        left: 0%;
+    }
+}
+
+
+

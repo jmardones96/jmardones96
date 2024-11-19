@@ -1,0 +1,66 @@
+/*me declaro poetic testament*/
+/* Estilo principal de la sección con clase abreviada */
+.testamenlove {
+    padding:70px; /* Espaciado general */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Color de texto por defecto */
+}
+
+/* Títulos */
+.testamenlove h2 {
+    font-size: 2.5rem;
+    color: var(--color-red-4); /* Blanco puro */
+}
+
+.testamenlove h3 {
+    font-size: 2rem;
+    color: var(--color-red-4); /* Rojo suave para resaltar subtítulos */
+}
+
+/* Contenedor del poema */
+.testamenlove .poetic-testament {
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo translúcido */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordes blancos semi-transparentes */
+    border-radius: 20px;
+    padding: 40px 30px; /* Espaciado interno */
+    font-style: italic; /* Estilo cursivo */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    color: var(--color-red-4);/* Texto blanco cálido */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto hover */
+.testamenlove .poetic-testament:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Párrafos del poema */
+.testamenlove .poetic-testament p {
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+    line-height: 1.8; /* Altura de línea */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .testamenlove h2 {
+        font-size: 2rem;
+    }
+
+    .testamenlove h3 {
+        font-size: 1.5rem;
+    }
+
+    .testamenlove .poetic-testament {
+        /* Reducir padding en pantallas pequeñas */
+        padding: 15px 10px;
+        font-size: small;
+
+    }
+}
+
+
+
+
+

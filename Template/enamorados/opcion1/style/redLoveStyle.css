@@ -1,0 +1,35 @@
+/*red love zone*/
+.social-container {
+    background-color: white;
+    border: 2px solid var(--color-red-3);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.titleLoveZone {
+    color: var(--color-red-5);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.social-box {
+    border: 2px solid var(--color-red-1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--color-red-3);
+}
+
+.social-box:hover {
+    background-color: var(--color-red-1);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.social-box i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}

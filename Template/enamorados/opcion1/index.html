@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Story - Celebra tu amor</title>
+    <link rel="icon" href="imagenes/iconPage.ico" type="image/x-icon">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -18,13 +21,15 @@
 
     <link rel="stylesheet" href="style/lovePageStyle.css">
     <link rel="stylesheet" href="style/styleLove.css">
+    <link rel="stylesheet" href="style/redLoveStyle.css">
+    <link rel="stylesheet" href="style/timeLineLoveStyle.css">
+    <link rel="stylesheet" href="style/carrosulstyle.css">
+    <link rel="stylesheet" href="style/meDeclaroStyle.css">
 
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <link rel="icon" href="imagenes/iconPage.ico" type="image/x-icon">
 
 
 </head>
@@ -207,45 +212,67 @@
       </div>
     </section>
 
-    <!--linea de tiempo de amor-->
-    <section id="timeline" class="linelove-section">
+    <!--TiempoLove-->
+    <section id="timeline" class="linelove-section py-5">
         <div class="container">
-            <h2 class="text-center display-4 colorTexto-red-4 fw-bold" data-aos="zoom-in" data-aos-duration="3000">Nuestra Historia de Amor</h2>
+            <h2 class="text-center display-4 colorTexto-red-4 fw-bold mb-5" data-aos="zoom-in" data-aos-duration="3000">Nuestra Historia de Amor</h2>
             <div class="linelove-timeline">
-                <div class="linelove-container linelove-left" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
-                    <div class="linelove-content">
-                        <div class="linelove-date">15 Ene 2023</div>
-                        <h5 class="linelove-title fst-italic">Primer encuentro</h5>
-                        <p class="linelove-text">Descripción del primer encuentro</p>
+                <div class="linelove-container linelove-left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="linelove-content ">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div class="linelove-date">15 Ene 2023</div>
+                                <h5 class="linelove-title fst-italic">Primer encuentro</h5>
+                                <p class="linelove-text">Descripción del primer encuentro</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="imagenes/ff3.jpg" width="300" height="200" alt="Primer encuentro" class="img-fluid rounded" style="object-fit: cover;">                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="linelove-container linelove-right" data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+
+                <div class="linelove-container linelove-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="linelove-content">
-                        <div class="linelove-date">28 Ene 2023</div>
-                        <h5 class="linelove-title fst-italic">Primera cita</h5>
-                        <p class="linelove-text">Descripción de la primera cita</p>
+                        <div class="row">
+                            <div class="col-md-6 order-md-2">
+                                <div class="linelove-date">28 Ene 2023</div>
+                                <h5 class="linelove-title fst-italic">Primera cita</h5>
+                                <p class="linelove-text">Descripción de la primera cita</p>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <img src="imagenes/cr6.jpg" width="300" height="200" alt="Primera cita" class="img-fluid rounded">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="linelove-container linelove-left" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+
+                <div class="linelove-container linelove-left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="linelove-content">
-                        <div class="linelove-date">15 Feb 2023</div>
-                        <h5 class="linelove-title fst-italic">Aniversario</h5>
-                        <p class="linelove-text">Descripción del aniversario</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="linelove-date">15 Feb 2023</div>
+                                <h5 class="linelove-title fst-italic">Aniversario</h5>
+                                <p class="linelove-text">Descripción del aniversario</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="imagenes/ff2.jpg"  width="300" height="200"  alt="Aniversario" class="img-fluid rounded">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="linelove-container linelove-right" data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+
+                <div class="linelove-container linelove-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="linelove-content">
-                        <div class="linelove-date">28 Mar 2023</div>
-                        <h5 class="linelove-title fst-italic">Viaje juntos</h5>
-                        <p class="linelove-text">Descripción del viaje juntos</p>
+                        <div class="row">
+                            <div class="col-md-6 order-md-2">
+                                <div class="linelove-date">28 Mar 2023</div>
+                                <h5 class="linelove-title fst-italic">Viaje juntos</h5>
+                                <p class="linelove-text">Descripción del viaje juntos</p>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <img src="imagenes/cr.jpg"  width="300" height="200"  alt="Viaje juntos" class="img-fluid rounded">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,21 +303,21 @@
             </section>
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="3000">
                 <div class="col-md-8">
-                    <div class="poetic-testament">
+                    <div class="poetic-testament ">
                         <h3 class="text-center mb-4">Amor Eterno</h3>
-                        <p>
+                        <p data-aos="zoom-out-down" data-aos-duration="5500">
                             En este día, declaro mi amor por ti,<br>
                             Un sentimiento que trasciende el tiempo,<br>
                             Más allá de la vida, más allá del fin,<br>
                             Te amaré con cada latido y aliento.
                         </p>
-                        <p>
+                        <p data-aos="zoom-out-down"  data-aos-duration="5500"> 
                             Te dejo en herencia mi corazón entero,<br>
                             Cada sonrisa que dibujaste en mi rostro,<br>
                             Cada momento juntos, verdadero,<br>
                             Y la promesa de un amor que será eterno.
                         </p>
-                        <p>
+                        <p data-aos="zoom-out-down"  data-aos-duration="5500">
                             Que este testamento sea testigo,<br>
                             De un amor que ni la muerte podrá borrar,<br>
                             Pues en cada estrella, en cada suspiro,<br>
@@ -479,15 +506,15 @@
     </section>
 
     <!--Cronolov-->
-    <section id="cronometro" class="section-white" style="background-color: #C91C0F; color: white;" style="background-image: url('imagenes/FondoMadera.jpg'); background-size: cover; background-position: center; color: white;">
-        <div class="container">
-            <h2 class="text-center mb-4" style="color: white;">Cronómetro de Amor</h2>
+    <section id="cronometro" class="section-white " style="background-color: while; color: #C91C0F;" style="background-image: url('imagenes/FondoMadera.jpg'); background-size: cover; background-position: center; color: white;">
+        <div class="container border-top border-secondary"  >
+            <h2 class="text-center mb-4 mt-4" style="color: #C91C0F;">Cronómetro de Amor</h2>
             <div class=" custom-timeline-card">
                 <div class="card-body text-center">
-                    <div id="love-timer" class="display-4 mb-3" style="color: white;">
+                    <div id="love-timer" class="display-4 mb-3" style="color: #C91C0F;">
                         <span id="years">00</span>:<span id="days">000</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
                     </div>
-                    <p class="card-text" style="color: white;">Años : Días : Horas : Minutos : Segundos</p>
+                    <p class="card-text" style="color: #C91C0F;">Años : Días : Horas : Minutos : Segundos</p>
                 </div>
             </div>
         </div>
@@ -495,119 +522,14 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Cronómetro de amor
-        function updateLoveTimer() {
-            const startDate = new Date('2023-01-01T00:00:00'); // Cambia esta fecha por la fecha en que comenzaron su relación
-            const now = new Date();
-            const diff = now - startDate;
-
-            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-            const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('years').textContent = years.toString().padStart(2, '0');
-            document.getElementById('days').textContent = days.toString().padStart(3, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-
-        setInterval(updateLoveTimer, 1000);
-        updateLoveTimer(); // Actualizar inmediatamente al cargar la página
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const carousel = document.getElementById('photoCarousel');
-            const progressBar = carousel.querySelector('.progress-bar');
-            let carouselInstance = new bootstrap.Carousel(carousel, {
-                interval: 5000
-            });
-
-            function resetProgressBar() {
-                progressBar.style.width = '0%';
-            }
-
-            function startProgressBar() {
-                resetProgressBar();
-                let width = 0;
-                const interval = 50;
-                const incrementWidth = 100 / (5000 / interval);
-
-                const progress = setInterval(() => {
-                    width += incrementWidth;
-                    progressBar.style.width = width + '%';
-
-                    if (width >= 100) {
-                        clearInterval(progress);
-                    }
-                }, interval);
-            }
-
-            carousel.addEventListener('slide.bs.carousel', function () {
-                resetProgressBar();
-            });
-
-            carousel.addEventListener('slid.bs.carousel', function () {
-                startProgressBar();
-            });
-
-            startProgressBar();
-
-            // Pause carousel on hover
-            carousel.addEventListener('mouseenter', function () {
-                carouselInstance.pause();
-            });
-
-            carousel.addEventListener('mouseleave', function () {
-                carouselInstance.cycle();
-                startProgressBar();
-            });
-
-            // Add Ken Burns effect
-            const images = carousel.querySelectorAll('.carousel-item img');
-            images.forEach(img => {
-                img.addEventListener('load', function () {
-                    this.style.animation = 'kenBurns 20s ease-in-out infinite alternate';
-                });
-            });
-
-            // Add Ken Burns animation
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes kenBurns {
-                    0% {
-                        transform: scale(1) translate(0, 0);
-                    }
-                    100% {
-                        transform: scale(1.1) translate(-2%, -2%);
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-        });
-    </script>
+    <script src="js/cronolove.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/wsplove.js"></script>
 
     <script>
         AOS.init();
     </script>
 
-
-<script>
-    function updateTime() {
-        const now = new Date();
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        document.getElementById('message-time').textContent = `${hours}:${minutes}:${seconds}`;
-    }
-
-    setInterval(updateTime, 1000);
-    updateTime(); // Initial call to set the time immediately
-</script>
 
 </body>
 </html>
