@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://hmmproyectos.cl/</loc>
+  <lastmod>2020-10-15T01:12:42+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+
+<image:image>
+      <image:loc>https://hmmproyectos.cl/img/PANELES.jpeg    </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/Planos.jpg    </image:loc>
+ </image:image>
+
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/conrumenor.jpg  </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/Tablero.png   </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/interior.jpeg</image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/MONTAJEelECTRICO.jpg </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/apliques%20led%20exterior.jp </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/iluminacionLed.jpg   </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/iluIndustrial.jpg</image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/logo/HMM02.png    </image:loc>
+ </image:image>
+ <image:image>
+      <image:loc>https://hmmproyectos.cl/img/fondos/fondo1.jpg   </image:loc>
+ </image:image>
+
+</url>
+
+</urlset>
